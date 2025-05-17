@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="COC_Scheduler.exe" version="0.0.0.4" publicKeyToken="de76fae6b1f84770" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="COC_Scheduler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="COC_Scheduler.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+          <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+          <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+          <requestedExecutionLevel level="highestAvailable" uiAccess="false" />
+
+          이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+          requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="COC_Scheduler.exe" size="32752">
+      <assemblyIdentity name="COC_Scheduler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wGWa9VRta5JKilLugWz3wRwCGx3pjcXTcad4RxiQEuc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="COC_Scheduler.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-H5U92GO\Seenkrad" issuerKeyHash="d6040c1a63855b9e97c9cfc17ff32781c13a8d9d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>AQpCFfpfVS/toUIP9JoLpangX6cSTZoR+JDXDuqIM4E=</DigestValue></Reference></SignedInfo><SignatureValue>bdCWzf9hpHCdqlk5gpYS0IPZRi76P4YATTv4QC3W10YhRdwyiH4rMubWiJkD6vtfqsUOAEKTw1jOhxPuUxsqb6BKZQgFe5RqSK+K8BqOAGHzGMtRTMPHSqGbTwpQbxEPsPGZ8VIpcdQY8VXCqiag3oc+dnu8vKjwLYfRIADd/Cg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tiN2iU2x/NGg0sMKD2h1QyMdQTRH9xsfeuuqILiA0qv7a5ZGR/v+i8TS+tt8hXWDrDFbUSnzq8LUsHp/CjUvJ9vZ9MkbHgnOSVL1zvU88Uv9rirDAmUZiyojfh9ec5JO3PhxLrrqnl6sftPzMVqHUFR/1Lz/PoHE9YQbwBZwrgk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="813388ea0ed790f8119a4d12a75fe0a9a50b9af40f42a1ed2f555ffa15420a01" Description="" Url=""><as:assemblyIdentity name="COC_Scheduler.exe" version="0.0.0.4" publicKeyToken="de76fae6b1f84770" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-H5U92GO\Seenkrad</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>tRfVkfdTNG9L73vjdP7v4Dl29scPR+vwzFnkY1P+slw=</DigestValue></Reference></SignedInfo><SignatureValue>ZonYIyYEhPr0V/R2NtkvdpTDrjVkKmf/8RfVp1Y5Ql+sDNFP704+wU6hhAE5rotXQ/lTyPu7jPNGesB+9g7cDZR/RLTHmB/9OZ+/tXx6xeiqlmkMDWx6fQInm1ybHwEFa3H5j+Mdc9o0r6PAld5PpeOJsuON3KMxfujtn4bMRNw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tiN2iU2x/NGg0sMKD2h1QyMdQTRH9xsfeuuqILiA0qv7a5ZGR/v+i8TS+tt8hXWDrDFbUSnzq8LUsHp/CjUvJ9vZ9MkbHgnOSVL1zvU88Uv9rirDAmUZiyojfh9ec5JO3PhxLrrqnl6sftPzMVqHUFR/1Lz/PoHE9YQbwBZwrgk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQdYC1j4uRh6RMkpK6F3lKBDANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAEgANQBVADkAMgBHAE8AXABTAGUAZQBuAGsAcgBhAGQwHhcNMjUwNTE3MDgwMTE0WhcNMjYwNTE3MTQwMTE0WjA7MTkwNwYDVQQDHjAARABFAFMASwBUAE8AUAAtAEgANQBVADkAMgBHAE8AXABTAGUAZQBuAGsAcgBhAGQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALYjdolNsfzRoNLDCg9odUMjHUE0R/cbH3rrqiC4gNKr+2uWRkf7/ovE0vrbfIV1g6wxW1Ep86vC1LB6fwo1Lyfb2fTJGx4JzklS9c71PPFL/a4qwwJlGYsqI34fXnOSTtz4cS666p5erH7T8zFah1BUf9S8/z6BxPWEG8AWcK4JAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAq0FyN53cqPiWLujMQrGF3LQroRBUCRNrkUVYL801qYdv/woHc6cwHEasaMmm/NXil9iZFnmcj4/s9AVJdGt0fvw2rocsGMzWXogrcNXKbV+cL1yXe2ncQnhqA6svX3eFAf4vii/GMXwk1qn1Wpu4Ij5tQENTAOWGSzzDBVUg+YE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
